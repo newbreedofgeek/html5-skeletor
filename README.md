@@ -6,12 +6,12 @@ HTML5 Skeletor is a simple, flat (with no CSS, JS, Image preprocessors) fully re
 Features:
 ----------
 
-1) Layout and Responsiveness provided by Skeleton (A Beautiful Boilerplate for Responsive, Mobile-Friendly Development) - www.getskeleton.com
+*  Layout and Responsiveness provided by Skeleton (A Beautiful Boilerplate for Responsive, Mobile-Friendly Development) - www.getskeleton.com
 
-2) Contains a cool, interactive demo Brokerage Counter web app
+* Contains a cool, interactive demo Brokerage Counter web app
 
-3) Includes local Jquery and Modernizr references for faster loading
+* Includes local Jquery and Modernizr references for faster loading
 
-4) Includes Modernizr.load to load your JS files and init your web app
+* Includes Modernizr.load to load your JS files and init your web app
 
-5) The JS core includes the wonderful Standard Garber-Irish Implementation design pattern 
+* The JS core includes the wonderful Standard Garber-Irish Implementation design pattern 
