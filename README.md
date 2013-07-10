@@ -14,4 +14,9 @@ Features:
 
 * Includes Modernizr.load to load your JS files and init your web app
 
-* The JS core includes the wonderful Standard Garber-Irish Implementation design pattern 
+* The JS core includes the wonderful Standard Garber-Irish Implementation design pattern
+ 
+
+Demo:
+----------
+http://markpaul.name/dont-delete/html5-skeletor/
