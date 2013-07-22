@@ -28,10 +28,10 @@ var CBATOOLS_INIT = {
 
         }
     },
-
     tools: {
         counter: function() {
-            CBATOOLS.init();
+            CBATOOLS.tools.init();
+            CBATOOLS.anotherModule.log();
         }
     }
 };

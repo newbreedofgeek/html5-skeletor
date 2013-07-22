@@ -1,0 +1,29 @@
+{
+  "name": "html5-skeletor",
+  "version": "0.0.0",
+  "description": "HTML5 Skeletor is a simple fully responsive HTML5 front end template that you can use as a starting point for your HTML5 projects large or small.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/newbreedofgeek/html5-skeletor.git"
+  },
+  "keywords": [
+    "html5",
+    "responsive",
+    "template"
+  ],
+  "author": "Mark Paul (newbreedofgeek)",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "gitHead": "63b46f5ec011a75b753e6ed469566ebeacc4c96c",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-uglify": "~0.2.2",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-targethtml": "~0.2.4"
+  }
+}

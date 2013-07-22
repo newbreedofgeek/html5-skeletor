@@ -219,3 +219,9 @@ pip-log.txt
 #############
 .idea/
 
+#############
+## NODEJS / GrunJS / Build
+#############
+node_modules/
+build/
+

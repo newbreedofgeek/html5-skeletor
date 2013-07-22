@@ -1,5 +1,8 @@
 (function(NAMESPACE) {
-    NAMESPACE.init = function() {
+
+    NAMESPACE.tools = {};
+
+    NAMESPACE.tools.init = function() {
         var initialValue = 14;
         var targetValue = 15;
         var sliderWidth = 150;
