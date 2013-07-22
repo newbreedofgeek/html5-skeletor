@@ -24,9 +24,9 @@ Features:
 
 Release History:
 ----------
-1.0.1 - (22/7/2013) Fixed incorrect demo url
-
 1.0.0 - (22/7/2013) Added simple GruntJS build workflow to produce a build that uglifies and combines your JS files and uses conditional HTML to call the new files.
++ 1.0.1 - (22/7/2013) Fixed incorrect demo url
++ 1.0.2 - (22/7/2013) Remove the 'build' folder from .gitignore as it makes sense to show it
 
 0.1.0 - (21/7/2013) Initial release. This did not have the GruntJS build workflow and was a vanilla HTML5 responsive front end template. Use this if you don't want GruntJS.
 
