@@ -36,5 +36,5 @@ Release History:
 
 Demo:
 ----------
-http://markpaul.name/dont-delete/html5-skeletor/v1.0/build
+http://markpaul.name/dont-delete/html5-skeletor/v1.1/build
 + The demo shows the latest major.minor version (but patches and hot fixes are also included even though the url will not have the last patch number)
