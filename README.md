@@ -20,10 +20,13 @@ Features:
 
 * Includes a simple GruntJS build work flow, this currently does the following:
   + Uglifies and merges all your JS file modules into a single JS file script.js (Your 3rd party scripts are put into its own file called libraries.js)
+  + Creates a flat build of your files (placed in /build) as well as a zipped build of your files (placed in /deploy)
 
 
 Release History:
 ----------
+1.1.0 - (25/7/2013) Added a grunt task to zip your build folder and place it in a deploy folder
+
 1.0.0 - (22/7/2013) Added simple GruntJS build workflow to produce a build that uglifies and combines your JS files and uses conditional HTML to call the new files.
 + 1.0.1 - (22/7/2013) Fixed incorrect demo url
 + 1.0.2 - (22/7/2013) Remove the 'build' folder from .gitignore as it makes sense to show it
