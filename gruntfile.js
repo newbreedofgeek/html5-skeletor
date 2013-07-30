@@ -46,6 +46,15 @@ module.exports = function(grunt) {
                     {src: ['build/**'], dest: ''}
                 ]
             }
+        },
+        connect: {
+            server: {
+                options: {
+                    port: 8000,
+                    base: 'src/',
+                    keepalive: true
+                }
+            }
         }
     });
 
@@ -54,8 +63,15 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-targethtml');
     grunt.loadNpmTasks('grunt-contrib-compress');
+    grunt.loadNpmTasks( 'grunt-contrib-connect' );
 
-    // Default task(s).
-    grunt.registerTask('default', ['clean','uglify', 'copy', 'targethtml', 'compress']);
+    // Default task to build app
+    grunt.registerTask('default', ['clean', 'uglify', 'copy', 'targethtml']);
+
+    // Build and package app to zip
+    grunt.registerTask( 'package', ['clean', 'uglify', 'copy', 'targethtml', 'compress'] );
+
+    // Serve working src locally
+    grunt.registerTask( 'serve', ['clean', 'connect'] );
 
 };
