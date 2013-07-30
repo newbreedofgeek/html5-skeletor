@@ -23,7 +23,7 @@ HTML5 Skeletor is a simple fully responsive HTML5 front end template that you ca
       - Creates a flat build of your files (placed in /build)
 
   + package
-      - Does what 'default' does as well as zipping your packaging into a single zip file (placed in /deploy)
+      - Does what 'default' does as well as packaging your build into a single zip file (placed in /deploy)
 
   + serve
       - This is where you work from, it serves your app using localhost
