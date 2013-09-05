@@ -17,7 +17,7 @@ module.exports = function(grunt) {
                     dest: 'build/js/script.js'
                 },
                 {
-                    src:[ "src/js/libraries/*.js"],
+                    src: '<%= pkg.libraryPackageMinFiles %>',
                     dest: 'build/js/libraries.js'
                 }]
             }
@@ -55,6 +55,18 @@ module.exports = function(grunt) {
                     keepalive: true
                 }
             }
+        },
+        bower: {
+            install: {
+                options: {
+                    targetDir: './src/js/libraries/package',
+                    cleanTargetDir: true,
+                    cleanBowerDir: true,
+                    install: true,
+                    copy: true,
+                    verbose: true
+                }
+            }
         }
     });
 
@@ -63,15 +75,21 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-targethtml');
     grunt.loadNpmTasks('grunt-contrib-compress');
-    grunt.loadNpmTasks( 'grunt-contrib-connect' );
+    grunt.loadNpmTasks('grunt-contrib-connect');
+    grunt.loadNpmTasks('grunt-bower-task');
 
-    // Default task to build app
-    grunt.registerTask('default', ['clean', 'uglify', 'copy', 'targethtml']);
+    // Default task is to serve the app
+    grunt.registerTask('default', function() {
+        grunt.task.run(['build']);
+    });
 
     // Build and package app to zip
-    grunt.registerTask( 'package', ['clean', 'uglify', 'copy', 'targethtml', 'compress'] );
+    grunt.registerTask('package', ['clean', 'uglify', 'copy', 'targethtml', 'compress'] );
 
     // Serve working src locally
-    grunt.registerTask( 'serve', ['clean', 'connect'] );
+    grunt.registerTask('serve', ['clean', 'bower', 'connect'] );
+
+    // Build the app
+    grunt.registerTask('build', ['clean', 'uglify', 'copy', 'targethtml']);
 
 };

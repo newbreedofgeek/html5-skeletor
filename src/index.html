@@ -19,6 +19,7 @@
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/skeleton.css">
 	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/loadie.css">
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -84,20 +85,18 @@
     <!-- container -->
 
     <!--(if target dev)><!-->
-    <script src="js/libraries/jquery-1.8.0.min.js" type="text/javascript"></script>
-    <script src="js/libraries/modernizr.custom.01803.js" type="text/javascript"></script>
+    <!--Standard Bower controlled packages-->
+    <script src="js/libraries/package/jquery/jquery.js" type="text/javascript"></script>
+    <script src="js/libraries/package/modernizr/modernizr.js" type="text/javascript"></script>
+    <script src="js/libraries/package/yepnope/yepnope.js" type="text/javascript"></script>
+
+    <!--All your other 3rd party libraries - make sure you add them to the libraryPackageMinFiles array in package.json -->
+    <script src="js/libraries/jquery.loadie.min.js" type="text/javascript"></script>
     <!--<!(endif)-->
 
     <script src="js/libraries.js" type="text/javascript"></script>
     <script src="js/script.js" type="text/javascript"></script>
 
-    <!--(if target dist)>
-    <script>
-        $(function() {
-            CBATOOLS.init();
-        })
-    </script>
-    <!(endif)-->
 
 </body>
 </html>

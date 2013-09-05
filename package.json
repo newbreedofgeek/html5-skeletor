@@ -19,6 +19,12 @@
   "license": "BSD",
   "readmeFilename": "README.md",
   "gitHead": "63b46f5ec011a75b753e6ed469566ebeacc4c96c",
+  "libraryPackageMinFiles" : [
+      "src/js/libraries/package/jquery/jquery.min.js",
+      "src/js/libraries/package/modernizr/modernizr.js",
+      "src/js/libraries/package/yepnope/yepnope.1.5.4-min.js",
+      "src/js/libraries/jquery.loadie.min.js"
+  ],
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-clean": "~0.5.0",
@@ -26,6 +32,7 @@
     "grunt-contrib-copy": "~0.4.1",
     "grunt-targethtml": "~0.2.4",
     "grunt-contrib-compress": "~0.5.2",
-    "grunt-contrib-connect": "~0.3.0"
+    "grunt-contrib-connect": "~0.3.0",
+    "grunt-bower-task": "~0.3.1"
   }
 }

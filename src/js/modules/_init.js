@@ -32,6 +32,9 @@ var CBATOOLS_INIT = {
         counter: function() {
             CBATOOLS.tools.init();
             CBATOOLS.anotherModule.log();
+
+            // Start the 'loadie' plugin now to show around 50% has completed (just an ex example)
+            $('body').loadie(0.5);
         }
     }
 };
