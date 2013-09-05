@@ -25,10 +25,14 @@
 
                 // delay animation so it looks nice
                 setTimeout(function() {
+                    $('body').loadie(0.7); // exaple hook of 'loadie' plugin to show progress
+
                     $('.bar-inner').css('width', sliderStepWidth * initialValue);
                     $('.pointer').css('left', sliderStepWidth * initialValue);
 
                     $(".pointer").on('transitionend webkitTransitionEnd oTransitionEnd otransitionend MSTransitionEnd', function() {
+                        $('body').loadie(1); // exaple hook of 'loadie' plugin to show progress
+
                         if(initialValue == targetValue) {
                             $('.pointer').fadeOut();
                             $('.status').fadeOut();

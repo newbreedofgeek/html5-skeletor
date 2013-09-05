@@ -218,7 +218,12 @@ pip-log.txt
 .idea/
 
 #############
-## NODEJS / GrunJS
+## NODEJS / GruntJS
 #############
 node_modules/
+
+#############
+## GruntJS + Bower - default package library locations
+#############
+src/js/package
 
