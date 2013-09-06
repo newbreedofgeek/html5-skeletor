@@ -11,14 +11,19 @@ HTML5 Skeletor is a simple fully responsive HTML5 front end template that you ca
 
 * Contains a cool, interactive demo Brokerage Counter web app
 
-* Includes local Jquery and Modernizr references for faster loading
+* Includes Bower Package Management to download and install the core libraries and their correct versions (currently jquery, modernizr, yepnope)
 
-* Includes Modernizr.load to load your JS files (which can be broken into 'modules') and init your web app
+* Other 3rd party libraries and plugins can also be added locally along with the Package Libraries mentioned above (currently contains jquery.loadie to show cool page loading animation)
+
+* Using YepNope to load your JS files (which can be broken into 'modules') and init your web app
 
 * The JS core includes the Standard Garber-Irish Implementation design pattern
 
 * Includes a simple GruntJS dev work flow, this currently has the following grunt tasks:
   + default
+      - Does the same as 'build' below
+
+  + build
       - Uglifies and merges all your JS file modules into a single JS file script.js (Your 3rd party scripts are put into its own file called libraries.js)
       - Creates a flat build of your files (placed in /build)
 
@@ -27,6 +32,8 @@ HTML5 Skeletor is a simple fully responsive HTML5 front end template that you ca
 
   + serve
       - This is where you work from, it serves your app using localhost
+      - Bower Package Management is used here to download and install the core libraries to make sure everyone uses the same versions
+      - This is the 1st step to run before using 'package' or 'build' as you need the Bower fetched libraries
 
 
 ### Setup
@@ -70,11 +77,13 @@ Note: If you don't want the grunt workflow and you only want the pure HTML5 resp
 
 ### Demo
 
-http://markpaul.name/dont-delete/html5-skeletor/v2.0/build
+http://markpaul.name/dont-delete/html5-skeletor/v3.0/build
 + The demo shows the latest major.minor version (but patches and hot fixes are also included even though the url will not have the last patch number)
 
 
 ### Release History
+
+3.0.0 - (4/9/2013) Added Bower Package Management to download and install the core libraries and their correct versions (currently jquery, modernizr, yepnope)
 
 2.0.0 - (30/7/2013) Added a grunt task to serve your working app at localhost:8000, also cleaned up the other grunt workflow tasks which makes it not backward compatible with the previous version.
 

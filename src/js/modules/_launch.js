@@ -1,0 +1,3 @@
+$(function() {
+    CBATOOLS.init();
+})
