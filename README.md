@@ -84,6 +84,7 @@ http://markpaul.name/dont-delete/html5-skeletor/v3.0/build
 ### Release History
 
 3.0.0 - (4/9/2013) Added Bower Package Management to download and install the core libraries and their correct versions (currently jquery, modernizr, yepnope)
++ 3.0.1 - (9/9/2013) Included all directories as a guide
 
 2.0.0 - (30/7/2013) Added a grunt task to serve your working app at localhost:8000, also cleaned up the other grunt workflow tasks which makes it not backward compatible with the previous version.
 
