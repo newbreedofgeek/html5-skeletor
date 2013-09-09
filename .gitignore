@@ -222,8 +222,3 @@ pip-log.txt
 #############
 node_modules/
 
-#############
-## GruntJS + Bower - default package library locations
-#############
-src/js/package
-
