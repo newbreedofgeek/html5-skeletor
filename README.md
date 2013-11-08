@@ -2,7 +2,7 @@
 HTML5 Skeletor
 ========================
 
-HTML5 Skeletor is a simple fully responsive HTML5 front end template that you can use as a starting point for your HTML5 projects large or small. It also has a simple GruntJS dev workflow.
+HTML5 Skeletor is a simple fully responsive HTML5 front end template that you can use as a starting point for your HTML5 projects large or small. It also has a complete GruntJS workflow.
 
 
 ### Features
@@ -19,7 +19,7 @@ HTML5 Skeletor is a simple fully responsive HTML5 front end template that you ca
 
 * The JS core includes the Standard Garber-Irish Implementation design pattern
 
-* Includes a simple GruntJS dev work flow, this currently has the following grunt tasks:
+* Includes a complete GruntJS dev work flow, this currently has the following grunt tasks:
   + default
       - Does the same as 'build' below
 
