@@ -67,6 +67,12 @@ module.exports = function(grunt) {
                     verbose: true
                 }
             }
+        },
+        jshint: {
+            files: ['bower.json', 'package.json', 'gruntfile.js', 'src/js/**/*.js'],
+            options: {
+                ignores: ['src/js/libraries/**/*.js']
+            }
         }
     });
 
@@ -77,6 +83,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-compress');
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-bower-task');
+    grunt.loadNpmTasks('grunt-contrib-jshint');
 
     // Default task is to serve the app
     grunt.registerTask('default', function() {
@@ -84,12 +91,12 @@ module.exports = function(grunt) {
     });
 
     // Build and package app to zip
-    grunt.registerTask('package', ['clean', 'uglify', 'copy', 'targethtml', 'compress'] );
+    grunt.registerTask('package', ['jshint', 'clean', 'uglify', 'copy', 'targethtml', 'compress'] );
 
     // Serve working src locally
     grunt.registerTask('serve', ['clean', 'bower', 'connect'] );
 
     // Build the app
-    grunt.registerTask('build', ['clean', 'uglify', 'copy', 'targethtml']);
+    grunt.registerTask('build', ['jshint', 'clean', 'uglify', 'copy', 'targethtml']);
 
 };
