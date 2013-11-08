@@ -1,4 +1,5 @@
 (function(NAMESPACE) {
+    "use strict";
 
     NAMESPACE.tools = {};
 
@@ -33,7 +34,7 @@
                     $(".pointer").on('transitionend webkitTransitionEnd oTransitionEnd otransitionend MSTransitionEnd', function() {
                         $('body').loadie(1); // exaple hook of 'loadie' plugin to show progress
 
-                        if(initialValue == targetValue) {
+                        if(initialValue === targetValue) {
                             $('.pointer').fadeOut();
                             $('.status').fadeOut();
                             $('.checked').fadeIn();
@@ -48,7 +49,7 @@
             else {
                 alert('Error! Outside acceptable range of 0 - 15');
             }
-        }
+        };
 
         toolSetup(initialValue);
 
