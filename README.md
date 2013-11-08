@@ -2,7 +2,7 @@
 HTML5 Skeletor
 ========================
 
-HTML5 Skeletor is a simple fully responsive HTML5 front end template that you can use as a starting point for your HTML5 projects large or small. It also has a simple GruntJS dev workflow.
+HTML5 Skeletor is a simple fully responsive HTML5 front end template that you can use as a starting point for your HTML5 projects large or small. It also has a complete GruntJS workflow.
 
 
 ### Features
@@ -19,16 +19,17 @@ HTML5 Skeletor is a simple fully responsive HTML5 front end template that you ca
 
 * The JS core includes the Standard Garber-Irish Implementation design pattern
 
-* Includes a simple GruntJS dev work flow, this currently has the following grunt tasks:
+* Includes a complete GruntJS dev work flow, this currently has the following grunt tasks:
   + default
       - Does the same as 'build' below
 
   + build
+      - Applies JSHint to the core js files, lint errors need to be fixed to proceed
       - Uglifies and merges all your JS file modules into a single JS file script.js (Your 3rd party scripts are put into its own file called libraries.js)
       - Creates a flat build of your files (placed in /build)
 
   + package
-      - Does what 'default' does as well as packaging your build into a single zip file (placed in /deploy)
+      - Does what 'build' does as well as packaging your build into a single zip file (placed in /deploy)
 
   + serve
       - This is where you work from, it serves your app using localhost
@@ -78,10 +79,12 @@ Note: If you don't want the grunt workflow and you only want the pure HTML5 resp
 ### Demo
 
 http://markpaul.name/dont-delete/html5-skeletor/v3.0/build
-+ The demo shows the latest major.minor version (but patches and hot fixes are also included even though the url will not have the last patch number)
++ The demo shows the last  major.minor version that had UI updates (Patches and task/build updates are not shown as they wont be visible in the ui)
 
 
 ### Release History
+
+4.0.0 - (8/11/2013) Added JSHint to lint the core js files of the app. These errors need to be fixed before you can build or deploy.
 
 3.0.0 - (4/9/2013) Added Bower Package Management to download and install the core libraries and their correct versions (currently jquery, modernizr, yepnope)
 + 3.0.1 - (9/9/2013) Included all directories as a guide

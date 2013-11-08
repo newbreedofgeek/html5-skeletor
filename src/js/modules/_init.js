@@ -3,15 +3,19 @@ CBATOOLS.DEBUG = false;
 
 /* Standard Garber-Irish Implementation  */
 CBATOOLS.exec = function (controller, action) {
-    var ns = CBATOOLS_INIT,
-        action = (action === undefined) ? 'init' : action;
+    "use strict";
 
-    if (controller !== '' && ns[controller] && typeof ns[controller][action] === 'function') {
-        ns[controller][action]();
+    var ns = CBATOOLS_INIT,
+        actionOveride = (action === undefined) ? 'init' : action;
+
+    if (controller !== '' && ns[controller] && typeof ns[controller][actionOveride] === 'function') {
+        ns[controller][actionOveride]();
     }
 };
 
 CBATOOLS.init = function () {
+    "use strict";
+
     var body = document.body,
         controller = body.getAttribute('data-controller'),
         action = body.getAttribute('data-action');
@@ -25,11 +29,13 @@ CBATOOLS.init = function () {
 var CBATOOLS_INIT = {
     common: {
         init: function() {
-
+            "use strict";
         }
     },
     tools: {
         counter: function() {
+            "use strict";
+
             CBATOOLS.tools.init();
             CBATOOLS.anotherModule.log();
 
