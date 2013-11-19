@@ -19,7 +19,7 @@ HTML5 Skeletor is a simple fully responsive HTML5 front end template that you ca
 
 * The JS core includes the Standard Garber-Irish Implementation design pattern
 
-* Includes a QUnit based Unit and Integration test template which can be run in the browser or in headless mode using PhantomJs
+* Includes a QUnit based Unit and Integration test template which can be run in the browser or in headless mode using PhantomJS
 
 * Includes a complete GruntJS dev work flow, this currently has the following grunt tasks:
   + default
@@ -27,7 +27,7 @@ HTML5 Skeletor is a simple fully responsive HTML5 front end template that you ca
 
   + build
       - Applies JSHint to the core js files, lint errors need to be fixed to proceed
-      - Executes the Unit and Integration tests in headless mode using PhantomJs, tests need to pass to proceed to next step
+      - Executes the Unit and Integration tests in headless mode using PhantomJS, tests need to pass to proceed to next step
       - Uglifies and merges all your JS file modules into a single JS file script.js (Your 3rd party scripts are put into its own file called libraries.js)
       - Creates a flat build of your files (placed in /build)
 
@@ -94,7 +94,7 @@ http://markpaul.name/dont-delete/html5-skeletor/v5.0/src/tests
 
 ### Release History
 
-5.0.0 - (19/11/2013) Added QUnit based Unit and Integration tests that are now part of the Grunt workflow (using PhantomJS) for the build and package tasks. There is also a new task called 'test' (e.g. grunt test) that runs the tests in standalone mode.
+5.0.0 - (19/11/2013) Added QUnit based Unit and Integration tests that are now part of the Grunt workflow (using PhantomJS) for the build and package tasks. There is also a new task called 'test' (e.g. grunt test) that runs the tests in standalone/headless mode.
 
 4.0.0 - (8/11/2013) Added JSHint to lint the core js files of the app. These errors need to be fixed before you can build or deploy.
 
