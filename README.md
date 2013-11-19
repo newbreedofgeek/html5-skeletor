@@ -19,12 +19,15 @@ HTML5 Skeletor is a simple fully responsive HTML5 front end template that you ca
 
 * The JS core includes the Standard Garber-Irish Implementation design pattern
 
+* Includes a QUnit based Unit and Integration test template which can be run in the browser or in headless mode using PhantomJs
+
 * Includes a complete GruntJS dev work flow, this currently has the following grunt tasks:
   + default
       - Does the same as 'build' below
 
   + build
       - Applies JSHint to the core js files, lint errors need to be fixed to proceed
+      - Executes the Unit and Integration tests in headless mode using PhantomJs, tests need to pass to proceed to next step
       - Uglifies and merges all your JS file modules into a single JS file script.js (Your 3rd party scripts are put into its own file called libraries.js)
       - Creates a flat build of your files (placed in /build)
 
@@ -35,6 +38,9 @@ HTML5 Skeletor is a simple fully responsive HTML5 front end template that you ca
       - This is where you work from, it serves your app using localhost
       - Bower Package Management is used here to download and install the core libraries to make sure everyone uses the same versions
       - This is the 1st step to run before using 'package' or 'build' as you need the Bower fetched libraries
+
+  + test
+      _ Runs the QUnit based Unit and Integration tests in standalone/headless mode using PhantomJs
 
 
 ### Setup
@@ -78,11 +84,17 @@ Note: If you don't want the grunt workflow and you only want the pure HTML5 resp
 
 ### Demo
 
-http://markpaul.name/dont-delete/html5-skeletor/v3.0/build
+http://markpaul.name/dont-delete/html5-skeletor/v5.0/build
 + The demo shows the last  major.minor version that had UI updates (Patches and task/build updates are not shown as they wont be visible in the ui)
+
+### Tests
+
+http://markpaul.name/dont-delete/html5-skeletor/v5.0/src/tests
 
 
 ### Release History
+
+5.0.0 - (19/11/2013) Added QUnit based Unit and Integration tests that are now part of the Grunt workflow (using PhantomJS) for the build and package tasks. There is also a new task called 'test' (e.g. grunt test) that runs the tests in standalone mode.
 
 4.0.0 - (8/11/2013) Added JSHint to lint the core js files of the app. These errors need to be fixed before you can build or deploy.
 
