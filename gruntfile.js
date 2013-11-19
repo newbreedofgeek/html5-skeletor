@@ -51,6 +51,12 @@ module.exports = function(grunt) {
             server: {
                 options: {
                     port: 8000,
+                    base: 'src/'
+                }
+            },
+            serverAlive: {
+                options: {
+                    port: 8000,
                     base: 'src/',
                     keepalive: true
                 }
@@ -73,6 +79,15 @@ module.exports = function(grunt) {
             options: {
                 ignores: ['src/js/libraries/**/*.js']
             }
+        },
+        qunit: {
+            all: {
+                options: {
+                    urls: [
+                        'http://localhost:8000/tests/index.html'
+                    ]
+                }
+            }
         }
     });
 
@@ -84,6 +99,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-bower-task');
     grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-contrib-qunit');
 
     // Default task is to serve the app
     grunt.registerTask('default', function() {
@@ -91,12 +107,15 @@ module.exports = function(grunt) {
     });
 
     // Build and package app to zip
-    grunt.registerTask('package', ['jshint', 'clean', 'uglify', 'copy', 'targethtml', 'compress'] );
+    grunt.registerTask('package', ['jshint', 'test', 'clean', 'uglify', 'copy', 'targethtml', 'compress'] );
 
     // Serve working src locally
-    grunt.registerTask('serve', ['clean', 'bower', 'connect'] );
+    grunt.registerTask('serve', ['clean', 'bower', 'connect:serverAlive'] );
 
     // Build the app
-    grunt.registerTask('build', ['jshint', 'clean', 'uglify', 'copy', 'targethtml']);
+    grunt.registerTask('build', ['jshint', 'test', 'clean', 'uglify', 'copy', 'targethtml']);
+
+    // run apps unit tests
+    grunt.registerTask('test', ['connect:server', 'qunit']);
 
 };
