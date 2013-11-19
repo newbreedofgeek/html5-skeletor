@@ -84,12 +84,12 @@ Note: If you don't want the grunt workflow and you only want the pure HTML5 resp
 
 ### Demo
 
-http://markpaul.name/dont-delete/html5-skeletor/v5.0/build
+http://markpaul.name/dont-delete/html5-skeletor/v5.0.0/build
 + The demo shows the last  major.minor version that had UI updates (Patches and task/build updates are not shown as they wont be visible in the ui)
 
 ### Tests
 
-http://markpaul.name/dont-delete/html5-skeletor/v5.0/src/tests
+http://markpaul.name/dont-delete/html5-skeletor/v5.0.0/src/tests
 
 
 ### Release History
