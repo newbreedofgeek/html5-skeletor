@@ -1,4 +1,3 @@
-
 HTML5 Skeletor
 ========================
 
@@ -95,6 +94,7 @@ http://markpaul.name/dont-delete/html5-skeletor/v5.0.0/src/tests
 ### Release History
 
 5.0.0 - (19/11/2013) Added QUnit based Unit and Integration tests that are now part of the Grunt workflow (using PhantomJS) for the build and package tasks. There is also a new task called 'test' (e.g. grunt test) that runs the tests in standalone/headless mode.
++ 5.0.1 - (6/12/2013) Fixed incorrect clone URL in readme file
 
 4.0.0 - (8/11/2013) Added JSHint to lint the core js files of the app. These errors need to be fixed before you can build or deploy.
 
