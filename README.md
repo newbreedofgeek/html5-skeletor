@@ -51,7 +51,7 @@ HTML5 Skeletor is a simple fully responsive HTML5 front end template that you ca
 
 3. Clone the html5-skeletor repository
 ```
-$ git clone git@github.com:newbreedofgeek/html5-skeletor.git
+$ git clone https://github.com/newbreedofgeek/html5-skeletor.git
 ```
 
 4. Navigate to the html5-skeletor folder
