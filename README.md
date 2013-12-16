@@ -110,3 +110,7 @@ http://markpaul.name/dont-delete/html5-skeletor/v5.0.0/src/tests
 + 1.0.2 - (22/7/2013) Remove the 'build' folder from .gitignore as it makes sense to show it
 
 0.1.0 - (21/7/2013) Initial release. This did not have the GruntJS build workflow and was a vanilla HTML5 responsive front end template. Use this if you don't want GruntJS.
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/newbreedofgeek/html5-skeletor/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
