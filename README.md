@@ -1,6 +1,8 @@
 HTML5 Skeletor
 ========================
 
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/newbreedofgeek/html5-skeletor/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
 HTML5 Skeletor is a simple fully responsive HTML5 front end template that you can use as a starting point for your HTML5 projects large or small. It also has a complete GruntJS workflow.
 
 
@@ -111,6 +113,4 @@ http://markpaul.name/dont-delete/html5-skeletor/v5.0.0/src/tests
 
 0.1.0 - (21/7/2013) Initial release. This did not have the GruntJS build workflow and was a vanilla HTML5 responsive front end template. Use this if you don't want GruntJS.
 
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/newbreedofgeek/html5-skeletor/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
