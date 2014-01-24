@@ -14,7 +14,7 @@ HTML5 Skeletor is a simple fully responsive HTML5 front end template that you ca
 
 * Other 3rd party libraries and plugins can also be added locally along with the Package Libraries mentioned above (currently contains jquery.loadie to show cool page loading animation)
 
-* Using YepNope to load your JS files (which can be broken into 'modules') and init your web app
+* Using YepNope to load your JS files (which can be broken into 'modules') and init your website
 
 * The JS core includes the Standard Garber-Irish Implementation design pattern
 
