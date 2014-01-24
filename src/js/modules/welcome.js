@@ -11,7 +11,11 @@
             setTimeout(function() {
                 $('body').loadie(1); // exaple hook of 'loadie' plugin to show progress
 
-                $('.title-box').fadeIn('slow');
+                $('.title-box').animate({
+                    opacity: 1,
+                    top: -1430
+                }, 1000);
+
             }, 1000);
 
         }, 1000);
