@@ -4,5 +4,5 @@
 $(function() {
     "use strict";
 
-    CBATOOLS.init();
+    LOCALNAMESPACE.init();
 });

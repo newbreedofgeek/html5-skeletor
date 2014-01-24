@@ -1,62 +1,18 @@
 (function(NAMESPACE) {
     "use strict";
 
-    NAMESPACE.tools = {};
+    NAMESPACE.welcome = {};
 
-    NAMESPACE.tools.init = function() {
-        var initialValue = 14;
-        var targetValue = 15;
-        var sliderWidth = 150;
-        var sliderStepWidth = sliderWidth / targetValue;
+    NAMESPACE.welcome.init = function() {
+        // delay animation so it looks nice
+        setTimeout(function() {
+            $('body').loadie(0.7); // exaple hook of 'loadie' plugin to show progress
 
-        var toolSetup = function(newInitialValue) {
-            initialValue = newInitialValue;
+            setTimeout(function() {
+                $('body').loadie(1); // exaple hook of 'loadie' plugin to show progress
+            }, 1000);
 
-            if(initialValue >= 0 && initialValue <= targetValue) {
-                // initial state reset
-                $('.brokerage-tool').fadeIn();
-                $('.pointer').show();
-                $('.status').show();
-                $('.checked').hide();
-                $('.goal-flag').removeClass('glow');
-
-                $('.dyn-count').text('$' + (targetValue - initialValue));
-                $('.dyn-target-count').text('$' + targetValue);
-                $('.dyn-pointer-val').text('$' + initialValue);
-
-                // delay animation so it looks nice
-                setTimeout(function() {
-                    $('body').loadie(0.7); // exaple hook of 'loadie' plugin to show progress
-
-                    $('.bar-inner').css('width', sliderStepWidth * initialValue);
-                    $('.pointer').css('left', sliderStepWidth * initialValue);
-
-                    $(".pointer").on('transitionend webkitTransitionEnd oTransitionEnd otransitionend MSTransitionEnd', function() {
-                        $('body').loadie(1); // exaple hook of 'loadie' plugin to show progress
-
-                        if(initialValue === targetValue) {
-                            $('.pointer').fadeOut();
-                            $('.status').fadeOut();
-                            $('.checked').fadeIn();
-                            $('.goal-flag').addClass('glow');
-                        }
-                        else {
-                            $('.dyn-pointer-val').text('$' + initialValue); // force a redraw as there is a bug in css3 transitions where symbols are blurred (i.e. the $ is blurred)
-                        }
-                    });
-                }, 1000);
-            }
-            else {
-                alert('Error! Outside acceptable range of 0 - 15');
-            }
-        };
-
-        toolSetup(initialValue);
-
-        // DEBUG
-        $('#new-val').on('change', function() {
-            toolSetup($(this).val());
-        });
+        }, 1000);
     };
 
-}(CBATOOLS));
+}(LOCALNAMESPACE));

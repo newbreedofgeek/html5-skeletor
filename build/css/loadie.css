@@ -2,7 +2,7 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	background-color: lightblue;
+	background-color: darkgoldenrod;
 	width: 0;
 	height: 4px;
 	-webkit-transition: width 0.5s ease-out;

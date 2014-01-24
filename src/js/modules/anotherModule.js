@@ -7,4 +7,4 @@
         }
     };
 
-}(CBATOOLS));
+}(LOCALNAMESPACE));
