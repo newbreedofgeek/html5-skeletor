@@ -10,13 +10,11 @@ HTML5 Skeletor is a simple fully responsive HTML5 front end template that you ca
 
 * Layout and Responsiveness provided by Skeleton (A Beautiful Boilerplate for Responsive, Mobile-Friendly Development) - www.getskeleton.com
 
-* Contains a cool, interactive demo Brokerage Counter web app
-
 * Includes Bower Package Management to download and install the core libraries and their correct versions (currently jquery, modernizr, yepnope)
 
 * Other 3rd party libraries and plugins can also be added locally along with the Package Libraries mentioned above (currently contains jquery.loadie to show cool page loading animation)
 
-* Using YepNope to load your JS files (which can be broken into 'modules') and init your web app
+* Using YepNope to load your JS files (which can be broken into 'modules') and init your website
 
 * The JS core includes the Standard Garber-Irish Implementation design pattern
 
@@ -85,15 +83,16 @@ Note: If you don't want the grunt workflow and you only want the pure HTML5 resp
 
 ### Demo
 
-http://markpaul.name/dont-delete/html5-skeletor/v5.0.0/build
+http://markpaul.name/dont-delete/html5-skeletor/v6.0.0/build
 + The demo shows the last  major.minor version that had UI updates (Patches and task/build updates are not shown as they wont be visible in the ui)
 
 ### Tests
 
-http://markpaul.name/dont-delete/html5-skeletor/v5.0.0/src/tests
+http://markpaul.name/dont-delete/html5-skeletor/v6.0.0/src/tests
 
 
 ### Release History
+6.0.0 - (24/01/2014) Converted this to a template for Websites and therefore removed the web app demo and replaced with new branding and demo website. The Web app is still available in HTML5-thor (check in my other repos)
 
 5.0.0 - (19/11/2013) Added QUnit based Unit and Integration tests that are now part of the Grunt workflow (using PhantomJS) for the build and package tasks. There is also a new task called 'test' (e.g. grunt test) that runs the tests in standalone/headless mode.
 + 5.0.1 - (6/12/2013) Fixed incorrect clone URL in readme file
