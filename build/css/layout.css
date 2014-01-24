@@ -31,10 +31,11 @@ html {
     height: 1583px;
 }
 
-.title-box {
+html .container .title-box {
     text-align: center;
     position: absolute;
     top: -1450px;
+    display: none;
 }
 
 .title-box h1 {
@@ -58,6 +59,20 @@ html {
 .take-me-to-thor {
     font-style: italic;
     margin-top: 20px;
+    color: #fff;
+}
+
+.take-me-to-thor a {
+    color: #fff;
+}
+
+.credits {
+    font-style: italic;
+    color: #ccc;
+}
+
+.credits a {
+    color: #ccc;
 }
 
 /* #Media Queries

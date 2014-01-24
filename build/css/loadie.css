@@ -2,9 +2,9 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	background-color: darkgoldenrod;
+	background-color: #fff;
 	width: 0;
-	height: 4px;
+	height: 5px;
 	-webkit-transition: width 0.5s ease-out;
 	box-shadow: 0px 1px 5px rgba(0,0,0,0.25);
 }

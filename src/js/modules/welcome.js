@@ -10,6 +10,8 @@
 
             setTimeout(function() {
                 $('body').loadie(1); // exaple hook of 'loadie' plugin to show progress
+
+                $('.title-box').fadeIn('slow');
             }, 1000);
 
         }, 1000);
