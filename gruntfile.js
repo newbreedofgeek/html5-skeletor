@@ -1,4 +1,5 @@
 module.exports = function(grunt) {
+    "use strict";
 
     // Project configuration.
     grunt.initConfig({
@@ -78,7 +79,8 @@ module.exports = function(grunt) {
         jshint: {
             files: ['bower.json', 'package.json', 'gruntfile.js', 'src/js/**/*.js'],
             options: {
-                ignores: ['src/js/libraries/**/*.js']
+                ignores: ['src/js/libraries/**/*.js'],
+                jshintrc: true
             }
         },
         qunit: {
