@@ -102,6 +102,8 @@ http://markpaul.name/dont-delete/html5-skeletor/v6.0.0/src/tests
 
 
 ### Release History
+7.0.0 - (7/02/2014) - We use cssmin to minify and concat your css files now.
+
 6.1.0 - (7/02/2014) JSHint now runs using the .jshintrc file for portability. Although this in NOT a breaking change, the JSHint steps may fail due to more strict rules, if so you can tweak the .jshintrc file to fix them.
 
 6.0.0 - (24/01/2014) Converted this to a template for Websites and therefore removed the web app demo and replaced with new branding and demo website. The Web app is still available in HTML5-thor (check in my other repos)
