@@ -1,17 +1,7 @@
+/* jshint ignore:start */
 var LOCALNAMESPACE = LOCALNAMESPACE || {};
 LOCALNAMESPACE.DEBUG = false;
-
-/* Standard Garber-Irish Implementation  */
-LOCALNAMESPACE.exec = function (controller, action) {
-    "use strict";
-
-    var ns = LOCALNAMESPACE_INIT,
-        actionOveride = (action === undefined) ? 'init' : action;
-
-    if (controller !== '' && ns[controller] && typeof ns[controller][actionOveride] === 'function') {
-        ns[controller][actionOveride]();
-    }
-};
+/* jshint ignore:end */
 
 LOCALNAMESPACE.init = function () {
     "use strict";
@@ -42,5 +32,17 @@ var LOCALNAMESPACE_INIT = {
             // Start the 'loadie' plugin now to show around 50% has completed (just an ex example)
             $('body').loadie(0.5);
         }
+    }
+};
+
+/* Standard Garber-Irish Implementation  */
+LOCALNAMESPACE.exec = function (controller, action) {
+    "use strict";
+
+    var ns = LOCALNAMESPACE_INIT,
+        actionOveride = (action === undefined) ? 'init' : action;
+
+    if (controller !== '' && ns[controller] && typeof ns[controller][actionOveride] === 'function') {
+        ns[controller][actionOveride]();
     }
 };

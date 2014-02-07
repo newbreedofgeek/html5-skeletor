@@ -42,6 +42,16 @@ HTML5 Skeletor is a simple fully responsive HTML5 front end template that you ca
       _ Runs the QUnit based Unit and Integration tests in standalone/headless mode using PhantomJs
 
 
+### JavaScript Quality Control via JSHint
+
+* HTML5 Skeletor enforces JavaScript code quality via JSHint by putting your app through a set of JSHint rules to check its conformance to industry standards
+* These rules are described to your app locally using the .jshintrc config file
+* By having these rules in a separate file, your rules become 'portable' to your app developers who can share the rules between them and improve them if needed
+* The .jshintrc config file evolves separately in this repo - [JSHint Config Template] (https://github.com/newbreedofgeek/jshint-config-template) and you can choose to update to newer versions if you want (1.0.0 is the config version being used currently in HTML5 Thor)
+* the JSHint checks are built into the 'build' and 'package' steps, but if you want to run it on it's own you can do so with the 'grunt jshint' command
+* To learn more on how to prevent your custom variables and coding style from appearing as errors etc, visit this [readme] (https://github.com/newbreedofgeek/jshint-config-template) or read the [JSHint documentation] (http://jshint.com/docs/)
+
+
 ### Setup
 
 1. Install [Node.js](http://nodejs.org/)
@@ -92,6 +102,8 @@ http://markpaul.name/dont-delete/html5-skeletor/v6.0.0/src/tests
 
 
 ### Release History
+6.1.0 - (7/02/2014) JSHint now runs using the .jshintrc file for portability. Although this in NOT a breaking change, the JSHint steps may fail due to more strict rules, if so you can tweak the .jshintrc file to fix them.
+
 6.0.0 - (24/01/2014) Converted this to a template for Websites and therefore removed the web app demo and replaced with new branding and demo website. The Web app is still available in HTML5-thor (check in my other repos)
 
 5.0.0 - (19/11/2013) Added QUnit based Unit and Integration tests that are now part of the Grunt workflow (using PhantomJS) for the build and package tasks. There is also a new task called 'test' (e.g. grunt test) that runs the tests in standalone/headless mode.
